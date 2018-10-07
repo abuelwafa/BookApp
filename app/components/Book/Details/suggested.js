@@ -3,7 +3,7 @@ import React from 'react';
 import requester from '../../../utilities/api/requester';
 import { fetchBooksAPI } from '../apis';
 
-import BookCard from 'components/shared/BookCard';
+// import BookCard from 'components/shared/BookCard';
 
 export default class SuggestedBooks extends React.Component {
   state = {
@@ -36,7 +36,7 @@ export default class SuggestedBooks extends React.Component {
     const bookCards = books.map(book => {
       return (
         <div className="column" key={book.id}>
-          <BookCard book={book} key={book.id} />
+          {/* <BookCard book={book} key={book.id} /> */}
         </div>
       );
     });
